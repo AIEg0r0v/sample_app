@@ -25,7 +25,8 @@ end
 gem 'jquery-rails', '2.2.1'
 
 group :test do
-	gem 'capybara'
+	# gem 'webrat', '0.7.3'
+	gem 'capybara', '2.0.2'
 end
 
 group :production do
