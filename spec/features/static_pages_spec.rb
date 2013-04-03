@@ -27,8 +27,14 @@ describe "Static pages" do
 			visit '/static_pages/home'
 			# page.should have_selector('title', 
 			# 	:text => "RoR Sample App| Home")
-			first('head title').native.text.should == "#{base_title}| Home"
+			first('head title').native.text.should == "#{base_title}"
 		end
+		# it "should have the title Home" do
+		# 	visit '/static_pages/home'
+		# 	# page.should have_selector('title', 
+		# 	# 	:text => "RoR Sample App| Home")
+		# 	first('head title').native.text.should_not == "f"
+		# end
 	end
 
 	describe "About page" do
